@@ -8,6 +8,11 @@
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #FFFFFF;
+    --nav-link-color: #4051A4;
+    --nav-hover-link-color: #407DA4;
+    --nav-hover-background-color: #E1E1E1;
 }
 
 body,
@@ -39,4 +44,27 @@ header {
 
 p {
     padding: 7px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
