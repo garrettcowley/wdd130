@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+* {
+    max-width: 960px;
+}
+
 :root {
     --primary-color: #03256C;
     --secondary-color: #2541B2;
@@ -83,10 +87,10 @@ article {
     position: absolute;
     top: 300px;
     left: 80px;
-    background: radial-gradient(#eee, var(--primary-color));
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
     padding: 0.65rem;
-    box-shadow: 0 0 30px #111;
     opacity: 0.9;
+    color: white;
 }
 
 article img {
@@ -97,4 +101,14 @@ footer {
     position: relative;
     bottom: 0;
     margin: 1rem;
+}
+
+.bannertitle {
+    position: absolute;
+    top: 210px;
+    left: 250px;
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    padding: 0.65rem;
+    opacity: 0.9;
+    color: white;
 }
